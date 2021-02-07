@@ -1,10 +1,10 @@
 <section id="feedback" class="feedback page-section">
     <div class="caption">
-        <h3 class="caption-title">
+        <h3 class="caption__title">
             Оставьте заявку
         </h3>
         <span class="line line--short"></span>
-        <p class="caption-subtitle">Оставьте заявку и мы с Вами свяжемся!</p>
+        <p class="caption__subtitle">Оставьте заявку и мы с Вами свяжемся!</p>
     </div>
     <!-- Форма обратной связи -->
     <form id="feedback-form" class="form" action="<?php bloginfo('template_directory'); ?>/apps/feedback/process/process.php"

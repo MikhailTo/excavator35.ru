@@ -2,11 +2,11 @@
 	<div class="intro__inner">
 
 		<div class="caption caption--intro">
-			<h3 class="caption-title caption-title--intro">
+			<h3 class="caption__title caption__title--intro">
 				+7 921 530-61-77
 			</h3>
 			<span class="line"></span>
-			<p class="caption-subtitle caption-subtitle--intro">
+			<p class="caption__subtitle caption__subtitle--intro">
 				Аренда спецтехники <br> в Вологде
 			</p>
 		</div>

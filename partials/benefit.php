@@ -1,10 +1,10 @@
 <section id="benefit" class="benefit page-section">
 	<div class="caption">
-		<h3 class="caption-title">
+		<h3 class="caption__title">
 			Excavator35
 		</h3>
 		<span class="line line--short"></span>
-		<p class="caption-subtitle">Мы предлагаем аренду специализированной техники,
+		<p class="caption__subtitle">Мы предлагаем аренду специализированной техники,
 			предназначенной для разных видов строительных работ.
 			У нас доступные цены на все виды услуг.</p>
 	</div>

@@ -1,6 +1,6 @@
 <section id="description" class="description description--first page-section">
 	<div class="caption">
-		<h3 class="caption-title">
+		<h3 class="caption__title">
 			Спецтехника
 		</h3>
 		<span class="line line--short"></span>
