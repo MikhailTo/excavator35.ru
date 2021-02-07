@@ -38,10 +38,6 @@ $mid-grey: rgb(134, 135, 139) !default;
 /// @type Color
 $dark-grey: rgb(48, 48, 48) !default;
 
-/// Brand color
-/// @type Color
-$brand-orange: rgb(234, 173, 2) !default;
-
 //Content odd color
 /// @type Color
 $bg-content-odd: $white;
@@ -50,21 +46,29 @@ $bg-content-odd: $white;
 /// @type Color
 $bg-content-even: $light-grey;
 
-/// Main brand color
-/// Light red
+/// Brand color
 /// @type Color
-$light-orange: #e57b24 !default;
+$brand-orange: rgb(234, 173, 2) !default;
 
-/// Medium red (hover)
+/// Light orange
 /// @type Color
-$mid-orange: #ff8929 !default;
+$light-orange: rgb(229, 123, 36) !default;
 
-/// Dark red (active)
+/// Medium orange (hover)
 /// @type Color
-$dark-orange: #ff943e !default;
+$mid-orange: rgb(255, 137, 41) !default;
 
+/// Dark orange (active)
+/// @type Color
+$dark-orange: rgb(255, 148, 62) !default;
 
+/// Mid red
+/// @type Color
+$mid-red: rgb(220, 53, 69) !default;
 
+/// Dark red
+/// @type Color
+$dark-red: rgba(220, 53, 69, 0.051) !default;
 
 /// Light yellow
 /// @type Color
@@ -77,9 +81,6 @@ $mid-yellow: rgb(234, 181, 52) !default;
 /// Dark yellow (active)
 /// @type Color
 $dark-yellow: rgb(229, 167, 34) !default;
-
-
-
 
 /// Light green
 /// @type Color
