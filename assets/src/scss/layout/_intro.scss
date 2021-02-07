@@ -4,48 +4,15 @@
 	width: 100%;
 	background: bottom url('../img/bg-intro.jpg') $dark-grey no-repeat;
 
-	&-inner {
+	&__inner {
 		z-index: 1;
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		//flex-direction: row-reverse;
-		//justify-content: space-between;
 		align-items: center;
-		//row-gap: 200px;
 		row-gap: 100px;
 		padding: 110px 0;
 		height: 100%;
-		
-	}
-
-	&-text {
-		text-align: center;
-		width: 512px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		//align-self: flex-end;
-		//margin-left: 50px;
-
-	}
-
-	&-title {
-		font-family: $text-font-second;
-		color: $light-white;
-		font-size: 40px;
-		font-weight: 400;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 4px black;
-	}
-
-	&-subtitle {
-		font-family: $text-font-second;
-		color: $light-white;
-		font-size: 40px;
-		font-weight: 400;
-		text-transform: uppercase;
-		text-shadow: 2px 2px 4px black;
 	}
 }
