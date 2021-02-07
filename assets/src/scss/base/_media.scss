@@ -56,17 +56,17 @@
 		padding-top: 58px;
 		padding-bottom: 55px;
 
-		&-subtitle {
+		&__subtitle {
 			margin-bottom: 40px;
 		}
 
-		&-items {
+		&__items {
 			flex-direction: column;
 			align-items: space-around;
 			row-gap: 15px;
 		}
 
-		&-item {
+		&__item {
 			row-gap: 15px;
 		}
 	}
@@ -107,24 +107,6 @@
 
 @media (max-width: 991.98px) {
 
-	.intro {
-		&-inner {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			row-gap: 10px;
-		}
-
-		&-text {
-			justify-self: center;
-			align-self: center;
-
-			& h2 {
-				font-size: 24px;
-			}
-		}
-	}
-
 	.description {
 		padding-top: 28px;
 		padding-bottom: 25px;
@@ -134,9 +116,6 @@
 	.site-header {
 		height: 72px;
 	}
-
-
-
 
 	.info {
 		width: 250px;
@@ -160,11 +139,7 @@
 		&-col {
 			height: 300px;
 		}
-
-
 	}
-
-
 }
 
 @media (max-width: 767.98px) {
@@ -183,12 +158,23 @@
 @media (max-width: 575.98px) {
 
 	.intro {
-		height: 600px;
+		height: 500px;
+
+		&__inner {
+			row-gap: 50px;
+		}
 	}
 
 	.caption {
 		&--intro {
 			width: 320px;
+		}
+
+		&__title,
+		&__subtitle {
+			&--intro {
+				font-size: 32px;
+			}
 		}
 	}
 
@@ -216,8 +202,8 @@
 		height: 80px;
 	}
 
-	.benefit-item {
-		width: 320px;
+	.benefit__item {
+		width: 300px;
 	}
 
 	.main-navigation>ul {

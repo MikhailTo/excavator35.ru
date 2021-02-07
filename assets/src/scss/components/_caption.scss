@@ -1,3 +1,8 @@
+/** ===========================
+ *  Captions (title and subtitle)
+ *  ===========================
+*/
+
 .caption {
     text-align: center;
     display: flex;
@@ -11,7 +16,7 @@
     }
 
     &__title {
-        color: #212121;
+        color: $dark-grey;
         font-size: 36px;
         font-weight: 400;
         line-height: 43px;
@@ -27,7 +32,7 @@
     }
 
     &__subtitle {
-        color: #86878b;
+        color: $mid-grey;
         font-size: 14px;
         font-weight: 400;
         line-height: 20px;
