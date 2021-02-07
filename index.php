@@ -1,5 +1,4 @@
-<?php
-get_header();?>
+<?php get_header();?>
 
 <!-- sprite -->
 
@@ -34,6 +33,5 @@ get_header();?>
         </button>
 
     </div>
-
-    <?php get_footer();?>
 </div>
+<?php get_footer();?>

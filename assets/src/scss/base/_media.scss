@@ -100,6 +100,10 @@
 			width: 820px;
 		}
 	}
+
+	.social-item-text {
+		display: none;
+	}
 }
 
 @media (max-width: 991.98px) {
@@ -267,8 +271,8 @@
 
 }
 
-/* When the screen is less than 991.98px wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the navbar (.icon) */
 @media screen and (max-width: 991.98px) {
+
 	.main-navigation ul {
 		display: none;
 	}
@@ -282,10 +286,7 @@
 			height: 32px;
 		}
 	}
-}
 
-/* The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. This class makes the navbar look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 991.98px) {
 	.site-header a.icon {
 		position: relative;
 		right: 20px;
@@ -318,11 +319,4 @@
 		}
 	}
 
-}
-
-@media (max-width: 1199.98px) {
-
-	.social-item-text {
-		display: none;
-	}
 }

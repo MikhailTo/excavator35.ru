@@ -16,7 +16,7 @@
 	<div class="social-list">
 		<ul class="social-items">
 			<li class="social-item">
-				<a class="social-item-link" href="tel:+79215306177" alt="tel">
+				<a class="social-item-link" href="tel:+79215306177">
 					<span class="social-item-prepend">
 						<svg class="social-item-icon">
 							<use xlink:href="#tel"></use>
@@ -26,7 +26,7 @@
 				</a>
 			</li>
 			<li class="social-item">
-				<a class="social-item-link" href="mailto:smirnov500@mail.ru" alt="mail">
+				<a class="social-item-link" href="mailto:smirnov500@mail.ru">
 					<span class="social-item-prepend">
 						<svg class="social-item-icon">
 							<use xlink:href="#mail"></use>
@@ -36,7 +36,7 @@
 				</a>
 			</li>
 			<li class="social-item">
-				<a class="social-item-link" href="https://wa.me/+79215306177" alt="whatsapp">
+				<a class="social-item-link" href="https://wa.me/+79215306177">
 					<span class="social-item-prepend">
 						<svg class="social-item-icon">
 							<use xlink:href="#wa"></use>
