@@ -1,0 +1,22 @@
+.logo {
+    z-index: 1;
+    color: $white;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $white;
+        opacity: 0.69;
+    }
+
+    &-prefix {
+        color: $brand-orange;
+    }
+
+    &-img {
+        width: 200px;
+        height: 180px;
+    }
+}

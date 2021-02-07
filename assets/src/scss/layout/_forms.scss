@@ -1,0 +1,255 @@
+.feedback {
+
+	&-form {
+
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.form {
+	
+	&-body {
+		display: flex;
+		flex-direction: row;
+		flex-grow: 527px;
+		justify-content: center;
+		column-gap: 67px;
+		padding: 0;
+		
+		width: 1121px;
+		max-width: 1121px;
+	}
+
+	&-col {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		row-gap: 30px;
+		//background-color: #007bff;
+
+		&:last-child {
+			justify-content: space-between;
+		}
+	}
+
+	&-group {
+		position: relative;
+		height: 60px;
+	}
+
+	&-footer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin-top: 43px;
+	}
+
+	&-control {
+		display: block;
+		width: 100%;
+		height: calc(1.5em + .75rem + 2px);
+		padding: .375rem .75rem;
+		color: #000;
+		font-size: 14px;
+		font-weight: 400;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid #e3e4e6;
+		//border-radius: .25rem;
+		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	}
+
+	&-control:focus {
+		color: #495057;
+		background-color: #fff;
+		border-color: #80bdff;
+		outline: 0;
+		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
+	}
+
+	/* Стили секции, в которой выводится капча */
+	&-captcha {
+		display: flex;
+		align-items: center;
+		//margin-bottom: 2rem;
+
+		&__refresh {
+			display: block;
+			border: 1px solid #ced4da;
+			margin-right: 0.5rem;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		&__input {
+			flex-grow: 1;
+			position: relative;
+			margin-bottom: 0;
+		}
+	}
+
+	&-control {
+
+		/* CSS для индикации полей форме при их валидности */
+		&.is-valid {
+			border: 1px solid #28a745;
+			padding-right: calc(1.5em + .75rem);
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+			background-repeat: no-repeat;
+			background-position: center right calc(.375em + .1875rem);
+			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+			z-index: 3;
+
+			&:focus {
+				border-color: #28a745;
+				box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+			}
+		}
+
+
+		/* CSS для индикации полей форме при их не валидности */
+		&.is-invalid {
+			border: 1px solid #dc3545;
+			padding-right: calc(1.5em + .75rem);
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+			background-repeat: no-repeat;
+			background-position: center right calc(.375em + .1875rem);
+			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+			:focus {
+				border-color: #dc3545;
+				box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+			}
+
+			&~.invalid-feedback {
+				display: block;
+			}
+		}
+	}
+
+	/* Стили для сообщения об ошибках */
+	&-error {
+		position: relative;
+		padding: .5rem 1rem 0.6rem;
+		margin-bottom: 1rem;
+		border-radius: .25rem;
+		color: #dc3545;
+		background-color: #dc35450d;
+		border: 1px solid #dc3545;
+	}
+
+	/* Стили для сообщения об успешной отправки */
+	&-result-success {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1000;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		background: rgba(0, 0, 0, .6);
+		font-size: 1.25rem;
+		border-radius: 4px;
+
+		&>div {
+			position: relative;
+			padding: .75rem 1.25rem;
+			margin-bottom: 1rem;
+			border: 1px solid #eff4f1;
+			z-index: 1001;
+			border-radius: 0;
+			color: #28a745;
+			background-color: #eff4f1;
+		}
+
+		& a {
+			color: #28a745;
+			background-color: transparent;
+			font-weight: 700;
+		}
+	}
+}
+
+/* CSS для индикатора */
+.progress {
+	display: -ms-flexbox;
+	display: flex;
+	height: 1rem;
+	overflow: hidden;
+	font-size: .75rem;
+	background-color: #e9ecef;
+	border-radius: .25rem;
+	margin-bottom: 0.5rem;
+
+	&-bar {
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-ms-flex-pack: center;
+		justify-content: center;
+		color: #fff;
+		text-align: center;
+		white-space: nowrap;
+		background-color: #007bff;
+		transition: width .6s ease;
+		background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+		background-size: 1rem 1rem;
+	}
+}
+
+.d-none {
+	display: none !important;
+}
+
+label {
+	display: inline-block;
+	margin-bottom: .5rem;
+}
+
+input.form-control,
+textarea.form-control {
+	min-width: 187px;
+	max-width: 527px;
+}
+
+input.form-control {
+	height: 31px;
+}
+
+textarea.form-control {
+	height: 200%;
+}
+
+textarea.form-control.is-valid {
+	padding-right: calc(1.5em + .75rem);
+	background-position: top calc(.375em + .1875rem) right calc(.375em + .1875rem);
+}
+
+.invalid-feedback {
+	position: relative;
+	bottom: -2px;
+	display: none;
+	width: 100%;
+	margin-top: .25rem;
+	font-size: 80%;
+	color: #dc3545;
+}
+
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}

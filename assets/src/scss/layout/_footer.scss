@@ -1,0 +1,21 @@
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: $black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.copyright>p {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    color: $white;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.5;
+}

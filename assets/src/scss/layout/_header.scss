@@ -1,0 +1,33 @@
+.site-header {
+    z-index: 4;
+    //position: relative;
+    position: fixed;
+    top: 0;
+    height: 72px;
+    width: 100%;
+    //background: linear-gradient(to bottom, #000000, #434343);
+    background-color: $bg-header;
+    transition: 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        box-shadow: -3px 4px 7px 1px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.site {
+    margin-top: 40px;
+}
+
+.icon {
+    display: none;
+}

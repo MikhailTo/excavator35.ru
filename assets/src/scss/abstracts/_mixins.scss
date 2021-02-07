@@ -1,0 +1,33 @@
+/// Make a element (child) in the center of a parent
+/// parent should have position relative
+///
+///.parent {
+///position: relative;
+///}
+///.child {
+///@include centerer;
+///}
+/// @author Unknown
+/// @param 
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin centerer($horizontal: true, $vertical: true) {
+    position: absolute;
+    @if ($horizontal and $vertical) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    } @else if ($horizontal) {
+      left: 50%;
+      transform: translate(-50%, 0);
+    } @else if ($vertical) {
+      top: 50%;
+      transform: translate(0, -50%);
+    }
+  }
+  
