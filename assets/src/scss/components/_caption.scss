@@ -12,6 +12,7 @@
     margin-bottom: 80px;
 
     &--intro {
+        @extend .caption;
         margin:0;
     }
 
@@ -24,6 +25,7 @@
         margin: 0;
 
         &--intro {
+            @extend .caption__title;
             font-family: $text-font-second;
             color: $white;
             font-size: 40px;
@@ -41,6 +43,7 @@
         margin: 0;
 
         &--intro {
+            @extend .caption__subtitle;
             font-family: $text-font-second;
             color: $white;
             font-size: 40px;

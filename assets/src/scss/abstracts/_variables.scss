@@ -42,9 +42,13 @@ $dark-grey: rgb(48, 48, 48) !default;
 /// @type Color
 $brand-orange: rgb(234, 173, 2) !default;
 
-//Content color
-$bg-content-first: $white;
-$bg-content-second: $light-grey;
+//Content odd color
+/// @type Color
+$bg-content-odd: $white;
+
+//Content odd color
+/// @type Color
+$bg-content-even: $light-grey;
 
 /// Main brand color
 /// Light red

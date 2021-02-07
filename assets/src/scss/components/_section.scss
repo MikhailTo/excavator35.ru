@@ -5,4 +5,12 @@ section {
     &.feedback {
         padding: 108px 0;
     }
+
+    &:nth-child(odd){
+        background-color: $bg-content-odd;
+    }
+
+    &:nth-child(even){
+        background-color: $bg-content-even;
+    }
 }

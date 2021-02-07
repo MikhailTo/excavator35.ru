@@ -14,6 +14,7 @@
 	}
 
 	&--soon {
+		@extend .info;
 		top: 8%;
 		left: -10%;
 		background-color: $mid-orange;
@@ -21,6 +22,7 @@
 	}
 
 	&--extra {
+		@extend .info;
 		bottom: -3%;
 		right: -10%;
 		transform: rotate(-5deg);

@@ -48,7 +48,7 @@
 		</ul>
 	</div>
 	<div class="copyright">
-		<p>© 2021 Mike</p>
+		<p>© 2021 Excavator35</p>
 	</div>
 </footer><!-- #colophon -->
 
