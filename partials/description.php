@@ -1,15 +1,15 @@
-<section id="description" class="description description--first page-section">
+<section id="description" class="description page-section">
 	<div class="caption">
 		<h3 class="caption__title">
 			Спецтехника
 		</h3>
-		<span class="line line--short"></span>
+		<span class="line--short"></span>
 	</div>
-	<div class="description-inner description-inner--first">
-		<div class="description-text">
-			<h2 class="description-title">Экскаватор Volvo 210 на гусеничном ходу</h2>
-			<span class="line line--short"></span>
-			<div class="description-subtitle">
+	<div class="description__inner--first">
+		<div class="description__text">
+			<h2 class="description__title">Экскаватор Volvo 210 на гусеничном ходу</h2>
+			<span class="line--short"></span>
+			<div class="description__subtitle">
 				<p>Экскаватор Volvo 210 на гусеничном ходу характеризуется высокими эксплуатационными качествами,
 					эргономичностью, простотой управления, эффективностью и надежностью.
 					Универсальность строительной специальной техники позволяет использовать машину практически
@@ -26,20 +26,20 @@
 			</div>
 
 		</div>
-		<div class="description-img description-img--first">
+		<div class="description__img--first">
 			<img src=" <?php bloginfo('template_directory'); ?>/assets/dist/img/excavator-1.png" alt="excavator">
-			<div class="info info--extra">
+			<div class="info--extra">
 				<h2>В наличии 5 экскаваторов!</h2>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="soon" class="description description--second page-section">
-	<div class="description-inner description-inner--second">
-		<div class="description-text">
-			<h2 class="description-title">Экскаватор-погрузчик Volvo BL71B</h2>
-			<span class="line line--short"></span>
-			<div class="description-subtitle">
+<section id="soon" class="description page-section">
+	<div class="description__inner--second">
+		<div class="description__text">
+			<h2 class="description__title">Экскаватор-погрузчик Volvo BL71B</h2>
+			<span class="line--short"></span>
+			<div class="description__subtitle">
 				<p>Экскаватор-погрузчик прошел все необходимые испытания в тяжелых условиях работы.
 					Особого труда для него не составляет поднимать и перевозить габаритные,
 					тяжелые грузы, рыть котлованы и выполнять прочие работы в сфере строительства.
@@ -53,12 +53,11 @@
 					а тем более конкурентов.</p>
 			</div>
 		</div>
-		<div class="description-img description-img--second">
+		<div class="description__img--second">
 			<img src="<?php bloginfo('template_directory'); ?>/assets/dist/img/excavator-2.png" alt="excavator">
-			<div class="info info--soon">
+			<div class="info--soon">
 				<h2>Пока нет в наличии, <br> но скоро будет!</h2>
 			</div>
 		</div>
 	</div>
-
 </section>
