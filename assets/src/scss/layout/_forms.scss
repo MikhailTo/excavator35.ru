@@ -1,33 +1,47 @@
+.feedback {
+
+	&-form {
+
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+
 .form {
 	
-	&__body {
+	&-body {
 		display: flex;
 		flex-direction: row;
 		flex-grow: 527px;
 		justify-content: center;
 		column-gap: 67px;
 		padding: 0;
+		
 		width: 1121px;
 		max-width: 1121px;
 	}
 
-	&__col {
+	&-col {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
 		row-gap: 30px;
-		
+		//background-color: #007bff;
+
 		&:last-child {
 			justify-content: space-between;
 		}
 	}
 
-	&__group {
+	&-group {
 		position: relative;
 		height: 60px;
 	}
 
-	&__footer {
+	&-footer {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -35,71 +49,38 @@
 		margin-top: 43px;
 	}
 
-	&__control {
+	&-control {
 		display: block;
 		width: 100%;
 		height: calc(1.5em + .75rem + 2px);
 		padding: .375rem .75rem;
-		color: $black;
+		color: #000;
 		font-size: 14px;
 		font-weight: 400;
-		background-color: $white;
+		background-color: #fff;
 		background-clip: padding-box;
 		border: 1px solid #e3e4e6;
+		//border-radius: .25rem;
 		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-		
-		&:focus {
-			color: #495057;
-			background-color: #fff;
-			border-color: #80bdff;
-			outline: 0;
-			box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
-		}
+	}
 
-		/* CSS для индикации полей форме при их валидности */
-		&.is-valid {
-			border: 1px solid $mid-green;
-			padding-right: calc(1.5em + .75rem);
-			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
-			background-repeat: no-repeat;
-			background-position: center right calc(.375em + .1875rem);
-			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
-			z-index: 3;
-
-			&:focus {
-				border-color: $mid-green;
-				box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .25);
-			}
-		}
-
-		/* CSS для индикации полей форме при их не валидности */
-		&.is-invalid {
-			border: 1px solid $mid-red;
-			padding-right: calc(1.5em + .75rem);
-			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
-			background-repeat: no-repeat;
-			background-position: center right calc(.375em + .1875rem);
-			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
-
-			&:focus {
-				border-color: $mid-red;
-				box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-			}
-
-			&~.invalid-feedback {
-				display: block;
-			}
-		}
+	&-control:focus {
+		color: #495057;
+		background-color: #fff;
+		border-color: #80bdff;
+		outline: 0;
+		box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
 	}
 
 	/* Стили секции, в которой выводится капча */
 	&-captcha {
 		display: flex;
 		align-items: center;
+		//margin-bottom: 2rem;
 
 		&__refresh {
 			display: block;
-			border: 1px solid $light-grey;
+			border: 1px solid #ced4da;
 			margin-right: 0.5rem;
 			border-radius: 4px;
 			cursor: pointer;
@@ -112,21 +93,58 @@
 		}
 	}
 
-	
+	&-control {
+
+		/* CSS для индикации полей форме при их валидности */
+		&.is-valid {
+			border: 1px solid #28a745;
+			padding-right: calc(1.5em + .75rem);
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%2328a745' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+			background-repeat: no-repeat;
+			background-position: center right calc(.375em + .1875rem);
+			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+			z-index: 3;
+
+			&:focus {
+				border-color: #28a745;
+				box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, .25);
+			}
+		}
+
+
+		/* CSS для индикации полей форме при их не валидности */
+		&.is-invalid {
+			border: 1px solid #dc3545;
+			padding-right: calc(1.5em + .75rem);
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='-2 -2 7 7'%3e%3cpath stroke='%23dc3545' d='M0 0l3 3m0-3L0 3'/%3e%3ccircle r='.5'/%3e%3ccircle cx='3' r='.5'/%3e%3ccircle cy='3' r='.5'/%3e%3ccircle cx='3' cy='3' r='.5'/%3e%3c/svg%3E");
+			background-repeat: no-repeat;
+			background-position: center right calc(.375em + .1875rem);
+			background-size: calc(.75em + .375rem) calc(.75em + .375rem);
+
+			:focus {
+				border-color: #dc3545;
+				box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+			}
+
+			&~.invalid-feedback {
+				display: block;
+			}
+		}
+	}
 
 	/* Стили для сообщения об ошибках */
-	&__error {
+	&-error {
 		position: relative;
 		padding: .5rem 1rem 0.6rem;
 		margin-bottom: 1rem;
 		border-radius: .25rem;
-		color: $mid-red;
-		background-color: $dark-red;
-		border: 1px solid $mid-red;
+		color: #dc3545;
+		background-color: #dc35450d;
+		border: 1px solid #dc3545;
 	}
 
 	/* Стили для сообщения об успешной отправки */
-	&__result-success {
+	&-result-success {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -137,7 +155,7 @@
 		text-align: center;
 		justify-content: center;
 		align-items: center;
-		color: $white;
+		color: #fff;
 		background: rgba(0, 0, 0, .6);
 		font-size: 1.25rem;
 		border-radius: 4px;
@@ -149,15 +167,14 @@
 			border: 1px solid #eff4f1;
 			z-index: 1001;
 			border-radius: 0;
-			color: $mid-green;
+			color: #28a745;
 			background-color: #eff4f1;
 		}
 
 		& a {
-			color: $mid-green;
+			color: #28a745;
 			background-color: transparent;
 			font-weight: 700;
-			text-decoration: underline;
 		}
 	}
 }
@@ -180,7 +197,7 @@
 		flex-direction: column;
 		-ms-flex-pack: center;
 		justify-content: center;
-		color: $white;
+		color: #fff;
 		text-align: center;
 		white-space: nowrap;
 		background-color: #007bff;
@@ -199,21 +216,21 @@ label {
 	margin-bottom: .5rem;
 }
 
-input.form__control,
-textarea.form__control {
+input.form-control,
+textarea.form-control {
 	min-width: 187px;
 	max-width: 527px;
 }
 
-input.form__control {
+input.form-control {
 	height: 31px;
 }
 
-textarea.form__control {
+textarea.form-control {
 	height: 200%;
 }
 
-textarea.form__control.is-valid {
+textarea.form-control.is-valid {
 	padding-right: calc(1.5em + .75rem);
 	background-position: top calc(.375em + .1875rem) right calc(.375em + .1875rem);
 }
@@ -225,7 +242,7 @@ textarea.form__control.is-valid {
 	width: 100%;
 	margin-top: .25rem;
 	font-size: 80%;
-	color: $mid-red;
+	color: #dc3545;
 }
 
 
@@ -234,5 +251,5 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
-	-webkit-box-shadow: 0 0 0 30px $white inset !important;
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
 }
