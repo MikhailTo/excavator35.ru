@@ -136,7 +136,7 @@
 	}
 
 
-	
+
 
 	.info {
 		width: 250px;
@@ -178,26 +178,19 @@
 		width: 250px;
 		height: 70px;
 	}
-
-	.intro {
-		&-text {
-			margin: 0;
-		}
-	}
-
 }
 
 @media (max-width: 575.98px) {
 
 	.intro {
-		height: 300px;
-
-		&-text {
-			width: 320px;
-			margin: 0;
-		}
+		height: 600px;
 	}
 
+	.caption {
+		&--intro {
+			width: 320px;
+		}
+	}
 
 	.form {
 		&-body {
@@ -255,6 +248,7 @@
 	.site-header a.icon {
 		float: right;
 		display: block;
+
 		&>i {
 			width: 32px;
 			height: 32px;
@@ -268,6 +262,7 @@
 		position: relative;
 		right: 20px;
 	}
+
 	.main-navigation.responsive {
 		position: absolute;
 		display: block;
@@ -277,8 +272,9 @@
 		padding: 20px;
 		background-color: $bg-header;
 	}
+
 	.main-navigation.responsive ul {
-	
+
 		background-color: $bg-header;
 		display: flex;
 		margin: 0;
@@ -288,6 +284,7 @@
 		& li {
 			margin-bottom: 20px;
 		}
+
 		& a {
 			font-size: 18px;
 		}
