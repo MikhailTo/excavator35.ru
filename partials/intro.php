@@ -13,7 +13,7 @@
 		</div>
 
 		<div class="intro__action">
-			<button onclick="document.location='#feedback'" class="button">Сделать заявку</button>
+			<button onclick="document.location='#feedback'" class="button--intro">Сделать заявку</button>
 		</div>
 	
 	</div>

@@ -26,8 +26,8 @@
 
         <?php include( 'partials/map.php' ); ?>
 
-        <button id="linkTop" class="button button-up" onclick="toTop()">
-            <svg class="button-up-icon">
+        <button id="linkTop" class="button--up" onclick="toTop()">
+            <svg class="button__icon--up">
                 <use xlink:href="#up"></use>
             </svg>
         </button>
