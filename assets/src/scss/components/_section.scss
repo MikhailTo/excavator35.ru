@@ -7,10 +7,10 @@ section {
     }
 
     &:nth-child(odd){
-        background-color: $bg-content-odd;
+        background-color: $white;
     }
 
     &:nth-child(even){
-        background-color: $bg-content-even;
+        background-color: $light-grey;
     }
 }

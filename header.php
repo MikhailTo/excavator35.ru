@@ -4,6 +4,10 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index,follow">
+	<meta name="description" content="Предоставляем услуги по аренде экскаваторов в Вологде. Машинисты профессионалы, сделают работу на самом высоком уровне. Выгодная цена. Звоните: +7 (921) 530-61-77">
+	<meta name="keywords" content="экскаватор, экскаваторы, гусеничные экскаваторы, аренда, вологда" >
+	<meta name="yandex-verification" content="2e0d13f3b7d25f66" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
 	<!--JQuery Script -->

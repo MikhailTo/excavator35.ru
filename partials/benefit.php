@@ -1,4 +1,6 @@
+
 <section id="benefit" class="benefit page-section">
+
 	<div class="caption">
 		<h3 class="caption__title">
 			Excavator35

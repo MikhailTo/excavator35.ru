@@ -1,3 +1,4 @@
+
 <section id="intro" class="intro page-section">
 	<div class="intro__inner">
 
@@ -14,5 +15,6 @@
 		<div class="intro__action">
 			<button onclick="document.location='#feedback'" class="button">Сделать заявку</button>
 		</div>
+	
 	</div>
 </section>
