@@ -5,7 +5,7 @@
 <?php include( 'partials/sprite.php' ); ?>
 
 <div id="page" class="site">
-    <div id="content" class="site-content">
+    
         <!-- intro -->
 
         <?php include( 'partials/intro.php' ); ?>
@@ -14,9 +14,9 @@
 
         <?php include( 'partials/benefit.php' ); ?>
 
-        <!-- description -->
+        <!-- cards -->
 
-        <?php include( 'partials/description.php' ); ?>
+        <?php include( 'partials/cards.php' ); ?>
 
         <!-- feedback -->
 
@@ -26,13 +26,13 @@
 
         <?php include( 'partials/map.php' ); ?>
 
-        <button id="linkTop" class="button--up" onclick="toTop()">
+        <button id="linkTop" class="button--up">
             <svg class="button__icon--up">
                 <use xlink:href="#up"></use>
             </svg>
         </button>
 
-    </div>
+ 
 
 <?php get_footer();?>
 </div>

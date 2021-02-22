@@ -118,6 +118,16 @@
 		height: auto;
 	}
 
+	.cards {
+		height: 1500px;
+	}
+
+	.card {
+		&__items {
+			flex-direction: column;
+			row-gap: 50px;
+		}
+	}
 	.info {
 		width: 250px;
 		height: 80px;
@@ -227,6 +237,10 @@
 		}
 	}
 	
+	.card {
+		width: 300px;
+	}
+
 	.info {
 		position: relative;
 		transform: rotate(0deg);

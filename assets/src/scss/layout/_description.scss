@@ -4,7 +4,8 @@
 	height: auto;
 	padding-top: 108px;
 	padding-bottom: 105px;
-
+	display: none;
+	
 	&__inner {
 		display: flex;
 
@@ -15,11 +16,13 @@
 		&--first {
 			@extend .description__inner;
 			flex-direction: row;
+			display: none;
 		}
 
 		&--second {
 			@extend .description__inner;
 			flex-direction: row-reverse;
+			display: none;
 		}
 	}
 

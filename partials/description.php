@@ -1,11 +1,5 @@
-<section id="description" class="description page-section">
-	<div class="caption">
-		<h3 class="caption__title">
-			Спецтехника
-		</h3>
-		<span class="line--short"></span>
-	</div>
-	<div class="description__inner--first">
+<section id="description" class="description">
+	<div class="description__inner">
 		<div class="description__text">
 			<h2 class="description__title">Экскаватор Volvo 210 на гусеничном ходу</h2>
 			<span class="line--short"></span>
@@ -28,14 +22,13 @@
 		</div>
 		<div class="description__img--first">
 			<img src=" <?php bloginfo('template_directory'); ?>/assets/dist/img/excavator-1.png" alt="excavator">
-			<div class="info--extra">
+			<!--<div class="info--extra">
 				<h2>В наличии 5 экскаваторов!</h2>
-			</div>
+			</div>-->
 		</div>
 	</div>
-</section>
-<section id="soon" class="description page-section">
-	<div class="description__inner--second">
+<!--
+	<div class="description__inner">
 		<div class="description__text">
 			<h2 class="description__title">Экскаватор-погрузчик Volvo BL71B</h2>
 			<span class="line--short"></span>
@@ -59,5 +52,5 @@
 				<h2>Пока нет в наличии, <br> но скоро будет!</h2>
 			</div>
 		</div>
-	</div>
+	</div>-->
 </section>

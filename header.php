@@ -5,8 +5,9 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="index,follow">
-	<meta name="description" content="Предоставляем услуги по аренде экскаваторов в Вологде. Машинисты профессионалы, сделают работу на самом высоком уровне. Выгодная цена. Звоните: +7 (921) 530-61-77">
-	<meta name="keywords" content="экскаватор, экскаваторы, гусеничные экскаваторы, аренда, вологда" >
+	<meta name="description"
+		content="Предоставляем услуги по аренде экскаваторов в Вологде. Машинисты профессионалы, сделают работу на самом высоком уровне. Выгодная цена. Звоните: +7 (921) 530-61-77">
+	<meta name="keywords" content="экскаватор, экскаваторы, гусеничные экскаваторы, аренда, вологда">
 	<meta name="yandex-verification" content="2e0d13f3b7d25f66" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
@@ -25,96 +26,35 @@
 		crossorigin=""></script>
 	<!--Mask for phone's input Script -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
-	<?php wp_head(); ?>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () {
+				(m[i].a = m[i].a || []).push(arguments)
+			};
+			m[i].l = 1 * new Date();
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k,
+				a)
+		})
+		(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-	<script>
-		$(document).ready(function () {
-			$("#site-navigation").on("click", "a", function (event) {
-				event.preventDefault();
-				var id = $(this).attr('href'),
-					top = $(id).offset().top - 100;
-				$('body,html').animate({
-					scrollTop: top
-				}, 1500);
-			});
+		ym(72667324, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true,
+			webvisor: true
 		});
-
-		function toTop() {
-			// When the user clicks on the button, scroll to the top of the document
-
-			document.body.scrollTop = 0; // For Safari
-			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-
-		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-		function responsiveNavigation() {
-			var nav = document.getElementById("site-navigation");
-			if (nav.className === "main-navigation") {
-				nav.className += " responsive";
-			} else {
-				nav.className = "main-navigation";
-			}
-		}
-
-		function changeTopNav() {
-			var nav = document.getElementById("site-navigation");
-			var header = document.getElementById("masthead");
-
-			if (header.style.height === "40px") {
-				if (nav.className === "main-navigation responsive") {
-					nav.style.top = "40px";
-				}
-			} else {
-				if (nav.className === "main-navigation responsive") {
-					nav.style.top = "72px";
-				}
-			}
-		}
-
-		/*$(document).ready(function () {
-			$('a[href*=#]').bind('click', function (e) {
-				e.preventDefault(); // prevent hard jump, the default behavior
-
-				var target = $(this).attr("href"); // Set the target as variable
-
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-					scrollTop: $(target).offset().top
-				}, 600, function () {
-					location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
-
-				return false;
-			});
-		});*/
-
-		$(window).scroll(function () {
-			var scrollDistance = $(window).scrollTop() - 100;
-
-			// Show/hide menu on scroll
-			//if (scrollDistance >= 850) {
-			//		$('nav').fadeIn("fast");
-			//} else {
-			//		$('nav').fadeOut("fast");
-			//}
-
-			// Assign active class to nav links while scolling
-			$('.page-section').each(function (i) {
-				if ($(this).position().top <= scrollDistance) {
-					$('.main-navigation ul li.current-menu-item').removeClass('current-menu-item');
-					$('.main-navigation ul li').eq(i).addClass('current-menu-item');
-				}
-			});
-		}).scroll();
 	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/72667324" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
+	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
-
-
 	<header id="masthead" class="site-header">
-
 
 		<div class="site-branding">
 			<h1 class="site-title">
@@ -132,7 +72,7 @@
 					'items_wrap' 	=> 	'<ul>%3$s</ul>'
 				)); ?>
 
-		<a href="javascript:void(0);" class="icon" onclick="responsiveNavigation(); changeTopNav()">
+		<a id="linkToggleMenu" href="javascript://0" class="icon">
 			<svg class="main-navigation-icon">
 				<use xlink:href="#menu"></use>
 			</svg>
@@ -141,6 +81,5 @@
 
 		<!-- #site-navigation -->
 	</header><!-- #masthead -->
-
 
 	<?php get_template_part( get_template_directory_uri(), '/assets/dist/svg/sprite-default.svg' ); ?>
